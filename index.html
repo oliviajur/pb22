@@ -1,24 +1,194 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
+  <head>
+    <title>AR FUCK YEAH!</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <!-- we import arjs version without NFT but with marker + location based support -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+  
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs>
 
-        <h1>foo!</h1>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+      <a-marker preset="pattern" type="pattern" url="pattern-ar-markers-new-2-02.patt">
+
+        <a-box 
+        src="images/img-1.jpg"
+        position="0 0.5 0" 
+        material="opacity:0.9" 
+        radius="10"
+        animation__rotate = "property: rotation; dur:11000; easing: linear; dir: normal; from:0 0 0; to: 360 360 0; loop: true;">
+        </a-box>
+
+        <a-torus
+        position="0 1.25 0"
+        radius="2"
+        color="#ff21ff"
+        opacity="0.9"
+        rotation="90 0 0"
+        animation__rotate = "property: rotation; dur:10000; easing: linear; dir: normal; from:90 0 0; to: 0 0 360; loop: true;"></a-torus>
+        ></a-torus>
+
+        <a-torus
+        position="0 0 0"
+        radius="1.3"
+        radius-tubular="0.1"
+        color="#ff0000"
+        opacity="0.9"
+        rotation="90 0 0"
+        animation__rotate = "property: rotation; dur:9000; easing: linear; dir: normal; from:0 0 0; to: 360 0 0; loop: true;"></a-torus>
+        </a-torus>
+      </a-marker>
+<!-- /////////////////////////////////////////// -->
+
+      <a-marker preset="pattern" type="pattern" url="pattern-circle.patt">
+        <!-- <a-text 
+        value="Hello, world!"
+        color="white" 
+        rotation="-90 0 0" 
+        scale="2 2 2">
+        </a-text>  -->
+
+        <a-box 
+        src="images/img-2.jpg"
+        position="0 0.5 0" 
+        material="opacity:0.9" 
+        radius="10"
+        animation__rotate = "property: rotation; dur:9000; easing: linear; dir: normal; from:0 0 0; to: 360 360 0; loop: true;">
+        </a-box> 
+
+        <a-torus-knot 
+        color="#ff9f00"
+        opacity="0.8"
+        arc="180" 
+        p="2" 
+        q="7" 
+        radius="2.1" 
+        radius-tubular="0.09"
+        rotation="90 0 0"
+        animation__rotate = "property: rotation; dur:5000; easing: linear; dir: normal; from:0 0 0; to: 360 0 0; loop: true;"></a-torus-knot>>
+        </a-torus-knot>
+
+        <a-torus
+        position="0 1.25 0"
+        radius="2"
+        radius-tubular="0.1"
+        color="#ff0900"
+        opacity="0.8"
+        rotation="90 0 0"
+        animation__rotate = "property: rotation; dur:9000; easing: linear; dir: normal; from:0 0 0; to: 360 360 0; loop: true;"></a-torus>
+        ></a-torus>
+      </a-marker>
+      
+///////////////////////////////////////////
+      <a-marker preset="pattern" type="pattern" url="pattern-ar-markers-new-01.patt">
+        <!-- <a-text 
+        value="Hello, world!"
+        color="white" 
+        rotation="-90 0 0" 
+        sscale="2 2 2">
+        </a-text> -->
+
+        <a-box 
+        src="images/img-3.jpg"
+        position="0 0.5 0" 
+        material="opacity:0.9" 
+        radius="10"
+        animation__rotate = "property: rotation; dur:9000; easing: linear; dir: normal; from:0 0 0; to: 360 360 0; loop: true;">
+        </a-box> 
+
+        <a-torus-knot 
+        color="#26e100"
+        opacity="0.8"
+        arc="180" 
+        p="2" 
+        q="7" 
+        radius="2.1" 
+        radius-tubular="0.09"
+        rotation="90 0 0"
+        animation__rotate = "property: rotation; dur:5000; easing: linear; dir: normal; from:0 0 0; to: 360 0 0; loop: true;"></a-torus-knot>>
+        </a-torus-knot>
         
-        <script src="" async defer></script>
-    </body>
+      </a-marker>
+<!-- /////////////////////////////////// -->
+
+      <a-marker preset="pattern" type="pattern" url="pattern-ar-markers-new-04.patt">
+
+        <a-box 
+        src="images/img-4.jpg"
+        position="0 0.5 0" 
+        material="opacity:0.9" 
+        radius="10"
+        animation__rotate = "property: rotation; dur:9000; easing: linear; dir: normal; from:0 0 0; to: 360 360 0; loop: true;">
+        </a-box> 
+        
+        <a-sphere
+        position="0 0.25 0"
+        radius="0.72"
+        color="#2819f7"
+        opacity="0.7"
+        animation__color="property: material.color; from:#2819f7; to: #ff0000; easing:easeInOutSine; loop: true;"
+        ></a-sphere>
+      </a-marker>
+
+
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
 </html>
+
+
+
+<!-- <a-plane position="0 0.5 0" material="opacity:1" radius="5" src="images/test1.jpg"> this to add my image -->
+<!-- <a-marker preset="pattern" type="pattern" url="pattern-circle.patt">this is my own marker -->
+
+    <!-- <a-animation attribute="rotation"
+    dur="10000"
+    fill = "forwards"
+    to="0 360 0"
+    repeat="indefinite">
+    </a-animation> THIS IS AN AANIMATION-->
+
+
+    <!-- <a-marker preset="pattern" type="pattern" url="pattern-circle.patt">
+        <a-box 
+        position="0 0.5 0" 
+        material="opacity:1" 
+        radius="5" 
+        animation__rotate = "property: rotation; dur: 8000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;">
+      </a-box>
+      </a-marker> this is an animation with a built in rotation function-->
+
+      <!-- <a-entity
+      position="0 0 0"
+      scale="1 1 1"
+      gltf-model="images/gravity.gltf"
+    ></a-entity> this iss the code for loading models-->
+
+    <!-- <a-entity 
+    obj-model=”obj: src=(parfume-1/parfume-1.obj); 
+    mtl: src=parfume-1/parfume-1.mtl”>
+    </a-entity> another attempt at adding aa model -->
+
+    <!-- <a-marker preset="hiro">
+      <a-sphere
+      position = "0 0.5 0"
+      color = "blue"
+      material = "opacity:0.7"
+      radius = "1">
+      </a-sphere>
+    </a-marker> this is just adding a sphere to the same theme-->
+
+    <!-- <a-text 
+    value="Hello World!"
+    color=" blue"
+    position="0 0 0"
+    rotation="90 0 0"
+    ></a-text>  -->
+
+            <!-- <a-text 
+        value="Hello, world!"
+        color="white" 
+        rotation="-90 0 0" 
+        sscale="2 2 2">
+        </a-text> -->
